@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="Style.css">
   <title>My first Portfolio</title>
 </head>
 <body>
@@ -8,11 +9,11 @@
   <nav>
     <h2>Angel Ipanaque</h2>
       <div>
-        <ul>
-          <li><a>About me</a></li>
-          <li><a>Projects</a></li>
-          <li><a>Skills</a></li>
-          <li><a>Contact</a></li>
+        <ul class="nav-item">
+          <li class="nav-item"><a href="#about-me">About me</a></li>
+          <li class="nav-item"><a href="#projects">Projects</a></li>
+          <li class="nav-item"><a href="#skills">Skills</a></li>
+          <li class="nav-item"><a href="Contact.html">Contact</a></li>
         </ul>
       </div>
   </nav>
@@ -50,10 +51,11 @@
       </div>
     </section>
     <!-- space for future projects, most of them not built yet -->
-    <section id="Projects">
+    <section id="projects">
       <div class="projects-container">
         <h3>Projects</h3>
         <div class="projects-text-container-left">
+          <h4>Simplymagic</h4>
           <p>
             Ut tempor nisl non ipsum egestas cursus. In a semper sem. Proin blandit,
             orci sollicitudin finibus eleifend, lectus libero dignissim enim, et 
@@ -62,8 +64,14 @@
             Praesent in condimentum lacus, eget aliquam odio. Orci varius natoque penatibus et 
             magnis dis parturient montes, nascetur ridiculus mus.
           </p>
+          <img 
+            src=""
+            alt=""
+            class="Simplymagic"
+          />
         </div>
         <div class="projects-text-container-right">
+          <h4>Lobus</h4>
           <p>
             Quisque mattis posuere sem, id consequat diam. Aenean at cursus nulla. Aliquam 
             sollicitudin in magna nec finibus. Pellentesque a finibus lacus. Nulla gravida 
@@ -73,10 +81,39 @@
             ante eleifend eget. Sed vitae massa sollicitudin, venenatis turpis a, eleifend 
             justo.
           </p>
+          <img 
+            src=""
+            alt=""
+            class="Simplymagic"
+          />
         </div>
       </div>
 
     </section>
+    <!-- space for skills, deciding wich ones -->
+    <section id="skills">
+      <div class="skills-container">
+        <h3>Skills</h3>
+        <div class= "skills-list-container">
+          <p>
+            Donec eget augu
+          </p>
+          <p>
+            Donec eget augu
+          </p>
+          <p>
+            Donec eget augu
+          </p>
+        </div>
+      </div>
+      
+    </section>
+    <!-- space for footer -->
+    <footer id="footer">
+      <h4>Engr. Angel Ipanaque</h4>
+      <br>
+      <a>Lima, Febrero 2021</a>
 
+    </footer>
   </main>
 </body>
