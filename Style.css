@@ -1,4 +1,70 @@
+/*
+//Brand colors
+$color-primario: #4154BF;
+$color-sencundario: ;
+
+//Boolean colors
+$color-negative:rgba(255, 0, 0, 0.8);
+$color-positive:#04bf42;
+
+//Basic colors
+$color-claro: #ffffff;
+$color-oscuro:#262626;
+
+//Fonts
+$Fuente1: sans=serif;
+$Fuente2: 'Oswald', system-ui;
+
+//typos
+$h1: 52px;
+$h2:32px;
+$h3:22px;
+$p: 16px;
+$small: 10px;
+
+//Typo bolds
+$black: 800;
+$bolder: 700;
+$medium: 600;
+$normal: 500;
+$light: 400;
+*/
+
+
+#about-me {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+}
+
+#projects {
+
+}
+
+#skills {
+
+}
+
+#footer {
+    display: flex;
+    flex-direction: row;
+    background-color: #4154BF;
+}
+
+.h2 {
+    font-family: 'Cambria', Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+}
 .profile-photo {
     width: 380px;
     height: 400px;
+}
+
+nav {
+    display: inline-flexblock;
+    background-color: #4154BF;
+}
+
+.nav-item {
+    display: inline;
 }
