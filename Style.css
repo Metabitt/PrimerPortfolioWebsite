@@ -1,6 +1,6 @@
 /*
 //Brand colors
-$color-primario: #4154BF;
+$color-primario: #41bf47;
 $color-sencundario: ;
 
 //Boolean colors
@@ -12,8 +12,8 @@ $color-claro: #ffffff;
 $color-oscuro:#262626;
 
 //Fonts
-$Fuente1: sans=serif;
-$Fuente2: 'Oswald', system-ui;
+$Fuente1: Arial, Helvetica, sans-serif
+$Fuente2: "Lucida Console", 'monospace', "Courier New";
 
 //typos
 $h1: 52px;
@@ -32,7 +32,7 @@ $light: 400;
 
 
 #about-me {
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     align-content: flex-start;
 }
@@ -48,7 +48,7 @@ $light: 400;
 #footer {
     display: flex;
     flex-direction: row;
-    background-color: #4154BF;
+    background-color:  rgba(50, 160, 17, 0.884);;
 }
 
 .h2 {
@@ -61,10 +61,56 @@ $light: 400;
 }
 
 nav {
-    display: inline-flexblock;
-    background-color: #4154BF;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.nav-item {
-    display: inline;
-}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position:sticky;
+    top: 0;
+  }
+
+  .container-fluid {
+    display: inline-flex;
+    padding: 14px 16px;
+    background-color: #333;
+    justify-content:space-between;
+  }
+
+  .container-fluid a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+  }
+  .container-fluid .navbar-brand {
+    background-color: aqua;
+  }
+
+  li {
+    float:left;
+    
+  }
+  
+  .navbar-nav {
+    background-color: rgba(50, 160, 17, 0.884);
+  }
+
+  li a {
+    color: white;
+    text-decoration: none;
+    
+    
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: rgba(50, 160, 17, 0.884);
+  }
