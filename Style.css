@@ -8,7 +8,7 @@
 }
 .max-width{
   max-width: 1300px;
-  padding: 0 50px;
+  padding: 0 80px;
   margin: auto
 }
 
@@ -78,7 +78,7 @@
 /* home section styling*/
 .home{
   display: flex;
-  background: url("/data/111.jpg") no-repeat center;
+  background: url("/data/1111.png") no-repeat center;
   height: 100vh;
   color: #fff;
   background-size: cover;
@@ -107,7 +107,22 @@
   color: crimson;
   font-weight: 500;
 }
+.home .home-content a{
+  display: inline-block;
+  background: crimson;
+  color: #fff;
+  font-size: 25px;
+  padding: 12px 36px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
 
+.home .home-content a:hover{
+  color: #fff;
+  background: none;
+}
 
 /* responsive media query start*/
 @media (max-width: 990px){
@@ -164,6 +179,10 @@
   .home .home-content .text-3 {
     font-size:  35px;
   }
+  .home .home-content a{
+    font-size: 23px;
+    padding: 10px 30px;
+  }
 }
 
 @media (max-width: 690px){
@@ -177,6 +196,10 @@
   .home .home-content .text-3 {
     font-size:  32px;
  }
+ .home .home-content a{
+  font-size: 20px;
+  padding: 8px 20px;
+}
 }
 
 @media (max-width: 500px){
@@ -187,4 +210,8 @@
   .home .home-content .text-3 {
     font-size:  27px;
  }
+ .home .home-content a{
+  font-size: 17px;
+  padding: 6px 15px;
+}
 }
