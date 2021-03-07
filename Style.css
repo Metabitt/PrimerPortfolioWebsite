@@ -8,7 +8,7 @@
 }
 .max-width{
   max-width: 1300px;
-  padding: 0 80px;
+  padding: 0 50px;
   margin: auto
 }
 
@@ -66,7 +66,13 @@
   color: #fff;
   font-size: 23px;
   cursor: pointer;
-  display: none; 
+  display: none;
+  border-radius: 12px;
+  border: 1px solid; /* transparent border */
+  padding: 13px 30px; /* remove 2px as we are now using the border */
+  text-align: center;
+  text-decoration: none;
+  opacity: 0.6;
 }
 
 /* home section styling*/
@@ -104,17 +110,31 @@
 
 
 /* responsive media query start*/
-@media (max-width: 1033px){
+@media (max-width: 990px){
+  .home .max-width {
+    padding: 0;
+  }
+}
+@media (max-width: 990px){
   .max-width{
     padding: 0 50px;
   }
+}
+@media (max-width: 990px){
   .menu-btn{
     display: block;
     z-index: 999;
+    color: #fff;
   }
-  .menu-btn i.active:before{
+  .menu-btn i.active::before{
     content: "\f00d";
   }
+  .menu-btn:hover{
+    font-size: 14px;
+    font-weight: bold;
+    opacity: 1;
+    border: 1px crimson solid;
+}
   .navbar .menu{
     position: fixed;
     height: 100vh;
@@ -138,4 +158,33 @@
     margin: 20px 0;
     font-size: 25px;
   }
+  .home .home-content .text-2 {
+    font-size:  70px;
+  }
+  .home .home-content .text-3 {
+    font-size:  35px;
+  }
+}
+
+@media (max-width: 690px){
+  .max-width{
+    padding: 0 23px;
+  }
+
+  .home .home-content .text-2 {
+    font-size:  60px;
+  }
+  .home .home-content .text-3 {
+    font-size:  32px;
+ }
+}
+
+@media (max-width: 500px){
+
+  .home .home-content .text-2 {
+    font-size:  50px;
+  }
+  .home .home-content .text-3 {
+    font-size:  27px;
+ }
 }
