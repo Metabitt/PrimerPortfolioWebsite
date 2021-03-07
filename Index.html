@@ -1,126 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>My first Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio Website</title>
   <link rel="stylesheet" href="Style.css">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
 </head>
 <body>
 <!-- nav things -->
-<nav class="navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Angel Ipanaque</a>
-    </div>
-    <ul class="navbar-nav">
-      <li class="active"><a href="#">About me</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="Contact.html">Contact</a></li>
+<nav class="navbar">
+  <div class="max-width">
+    <div class="logo"><a href="#">Angel Ipanaque <span>Portfolio</span></a></div>
+    <ul class="menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About me</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Skills</a></li>
+      <li><a href="#">Contact</a></li>
     </ul>
+    <div class="menu-btn"></div>
+        <i class="fas fa-bars"></i>
   </div>
 </nav>
 
-<body>
-<!-- First ROW, all elements must be horizontal -->
-  <main>
-    <!-- main resume about me -->
-    <section id="about-me">
-      <div class="about-me-container">
-        <h3>About me</h3>
-        <div class="about-me-text-container">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Maecenas hendrerit dui molestie pulvinar hendrerit. 
-            Pellentesque maximus euismod ante ut volutpat. Pellentesque 
-            vel sagittis mauris, sit amet cursus metus. Aenean viverra 
-            metus ut mi suscipit, quis bibendum est volutpat. 
-          </p>
-          <p>
-            Morbi 
-            eleifend, justo quis vestibulum commodo, libero lectus 
-            scelerisque odio, eget gravida orci orci nec enim. Donec 
-            vehicula magna neque, id commodo magna tempus eu. Aenean 
-            vel ipsum quis ipsum porta viverra ut vel dolor. Nunc at 
-            ante tempor, venenatis nunc sed, ultricies urna. Morbi eu 
-            magna vel nisi pharetra venenatis non consequat turpis. 
-            Pellentesque laoreet mollis nunc, eget laoreet orci auctor 
-            vel. Maecenas sed cursus neque. Maecenas nulla velit, volutpat
-             a lorem non, placerat lobortis metus.
-          </p>
-          <img 
-            src="data/111.jpg" 
-            alt="Angel Ipanaque"
-            class="profile-photo"
-          />
-        </div>        
-      </div>
-    </section>
-    <!-- space for future projects, most of them not built yet -->
-    <section id="projects">
-      <div class="projects-container">
-        <h3>Projects</h3>
-        <div class="projects-text-container-left">
-          <h4>Simplymagic</h4>
-            <h5>Ropa y Accesorios</h5>
-            <h6>By July Perez</h6>
-          <p>
-            Ut tempor nisl non ipsum egestas cursus. In a semper sem. Proin blandit,
-            orci sollicitudin finibus eleifend, lectus libero dignissim enim, et 
-            lacinia mi nibh ac lectus. Vivamus vel blandit nulla. Sed non nisi nulla. 
-            Donec in quam sapien. Pellentesque a felis ornare, consequat nunc sed, cursus urna. 
-            Praesent in condimentum lacus, eget aliquam odio. Orci varius natoque penatibus et 
-            magnis dis parturient montes, nascetur ridiculus mus.
-          </p>
-          <img 
-            src="/data/WIREFRAME-INDEX.jpg"
-            alt="Simplymagic accesorios"
-            class="Simplymagic"
-          />
-        </div>
-        <div class="projects-text-container-right">
-          <h4>Lobus</h4>
-            <h5>Logistic Bus Parts</h5>
-            <h6>INTERPROVINCIALES, URBANOS Y CAMIONES</h6>
-          <p>
-            Quisque mattis posuere sem, id consequat diam. Aenean at cursus nulla. Aliquam 
-            sollicitudin in magna nec finibus. Pellentesque a finibus lacus. Nulla gravida 
-            lorem et tellus euismod sagittis. Ut vestibulum felis est, eu rhoncus velit 
-            ultrices dignissim. Morbi ut commodo dolor. Donec eget augue sodales, tincidunt 
-            tortor non, sodales augue. Praesent aliquet venenatis risus, vel condimentum 
-            ante eleifend eget. Sed vitae massa sollicitudin, venenatis turpis a, eleifend 
-            justo.
-          </p>
-          <img 
-            src="/data/WIREFRAME-CONTACT.jpg"
-            alt="Logistic Bus Parts"
-            class="Lobus"
-          />
-        </div>
+<!-- Home section start -->
+<section class="home" id="home">
+    <div class="max-width">
+      <div class="home-content">
+        <div class="text-1">Hello, my name is</div>
+        <div class="text-2">Angel Ipanaque</div>
+        <div class="text-3">and welcome to my <span>Portfolio</span></div>
       </div>
 
-    </section>
-    <!-- space for skills, deciding wich ones -->
-    <section id="skills">
-      <div class="skills-container">
-        <h3>Skills</h3>
-        <div class= "skills-list-container">
-          <p>
-            Fast Learning
-          </p>
-          <p>
-            Self taught
-          </p>
-          <p>
-            In love with life
-          </p>
-        </div>
-      </div>
-      
-    </section>
+    </div>  
+</section>
+
+  <script src="script.js"></script>
+
+<body>
+<!-- Home section start -->
+  
     <!-- space for footer -->
     <footer id="footer">
       <h4>Engr. Angel Ipanaque</h4>
